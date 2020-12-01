@@ -1,4 +1,4 @@
-# T1Gart | Gallery App
+# PaintArt | Gallery App
 
 <!-- about -->
 <p align="center">
