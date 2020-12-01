@@ -20,6 +20,8 @@ function App() {
   //refs
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
+  //flag
+  const [flag, setFlag] = useState(false)
 
   // brush states
   const [color, setColor] = useState('#000000');
@@ -43,7 +45,7 @@ function App() {
     ctx.strokeStyle = 'black';
     ctx.lineWidth = 5;
     contextRef.current = ctx;
-  }, []);
+  }, [flag]);
 
   const getTouchPos = (canvasDom, touchEvent) => {
     var rect = canvasDom.getBoundingClientRect();
@@ -170,7 +172,7 @@ function App() {
             <DecreaseBrush brushSize={brushSize} setBrushSize={setBrushSize} />
           </div>
         </div>
-        <AddImage canvas={canvasRef} color={color} context={contextRef} />
+        <AddImage canvas={canvasRef} color={color} context={contextRef} setFlag={setFlag} flag={flag} />
       </div>
       <Gallery />
     </>

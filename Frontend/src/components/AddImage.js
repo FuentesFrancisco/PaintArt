@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
-function AddImage({ canvas, context }) {
+function AddImage({ canvas, context, flag, setFlag }) {
   const [author, setAuthor] = useState('');
   const saveImage = async (e) => {
+  e.preventDefault()
+
     try {
       const url = canvas.current.toDataURL('image/jpeg', 0.4);
       const body = { img: url, author: author };
@@ -11,7 +13,7 @@ function AddImage({ canvas, context }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       });
-
+      setFlag(!flag)
       context.clearRect(0, 0, canvas.width, canvas.height);
       setAuthor('');
     } catch (error) {
