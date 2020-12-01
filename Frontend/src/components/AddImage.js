@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 function AddImage({ canvas, context }) {
   const [author, setAuthor] = useState('');
   const saveImage = async (e) => {
-    e.preventDefault()
     try {
       const url = canvas.current.toDataURL('image/jpeg', 0.4);
       const body = { img: url, author: author };
