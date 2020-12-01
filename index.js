@@ -30,8 +30,8 @@ app.post('/gallery', async (req, res) => {
     var origin = req.get('origin');
     try {
       if (
-        origin === 'http://t1gart.herokuapp.com' ||
-        origin === 'http://t1gart.herokuapp.com/?'
+        origin === 'https://paint-art.herokuapp.com/' ||
+        origin === 'https://paint-art.herokuapp.com/?'
       ) {
         const { img, author } = req.body;
         const sendData = await pool.query(

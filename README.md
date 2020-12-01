@@ -2,17 +2,17 @@
 
 <!-- about -->
 <p align="center">
-  <a href="">
-    <img src="" style="margin: 0 auto;" />
+  <a href="https://paint-art.herokuapp.com/">
+    <img src="https://paint-art.herokuapp.com/static/media/logo192.8dc61a89.png" style="margin: 0 auto;" />
   </a>
 
   <h3 align="center">PaintArt | A public Art Gallery</h3>
 
   <p align="center">
-    A website sample is hosted in  made with the PERN stack (PostgreSQL, Express, React, NodeJs).
+    A website sample is hosted in https://paint-art.herokuapp.com/ made with the PERN stack (PostgreSQL, Express, React, NodeJs).
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://paint-art.herokuapp.com/">View Demo</a>
     ·
     <a href="mailto:francisco.fuentes.fullstack@gmail.com">Report Bug</a>
     ·
