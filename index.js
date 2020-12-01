@@ -33,7 +33,7 @@ app.post('/gallery', async (req, res) => {
       if (
         origin === 'https://paint-art.herokuapp.com/' ||
         origin === 'https://paint-art.herokuapp.com/?' ||
-        origin === 'https://paint-art.herokuapp.com/?'
+        origin === 'https://paint-art.herokuapp.com'
       ) {
         console.log('entreeee')
         const { img, author } = req.body;
