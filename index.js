@@ -28,12 +28,13 @@ app.get('/gallery', async (req, res) => {
 app.post('/gallery', async (req, res) => {
   if (process.env.NODE_ENV === 'production') {
     var origin = req.get('origin');
-    console.log(origin)
+    console.log('aca',origin)
     try {
       if (
         origin === 'https://paint-art.herokuapp.com/' ||
         origin === 'https://paint-art.herokuapp.com/?'
       ) {
+        console.log('entreeee')
         const { img, author } = req.body;
         const sendData = await pool.query(
           'INSERT INTO arts (img, author) VALUES ($1, $2) RETURNING *',
