@@ -28,6 +28,7 @@ app.get('/gallery', async (req, res) => {
 app.post('/gallery', async (req, res) => {
   if (process.env.NODE_ENV === 'production') {
     var origin = req.get('origin');
+    console.log(origin)
     try {
       if (
         origin === 'https://paint-art.herokuapp.com/' ||
