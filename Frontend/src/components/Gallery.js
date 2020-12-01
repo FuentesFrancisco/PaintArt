@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Craft from './Crafts';
 
-function Gallery() {
+function Gallery({flag}) {
   const [arts, setArts] = useState([]);
 
   useEffect(() => {
     fetch('/gallery')
       .then((x) => x.json())
       .then((data) => setArts(data));
-  }, []);
+  }, [flag]);
 
   return (
     <div>

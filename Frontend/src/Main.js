@@ -174,7 +174,7 @@ function App() {
         </div>
         <AddImage canvas={canvasRef} color={color} context={contextRef} setFlag={setFlag} flag={flag} />
       </div>
-      <Gallery />
+      <Gallery flag={flag} />
     </>
   );
 }

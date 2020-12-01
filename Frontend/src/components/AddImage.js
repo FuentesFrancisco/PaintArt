@@ -13,9 +13,9 @@ function AddImage({ canvas, context, flag, setFlag }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       });
-      setFlag(!flag)
-      context.clearRect(0, 0, canvas.width, canvas.height);
       setAuthor('');
+      setFlag(!flag)
+      //context.clearRect(0, 0, canvas.width, canvas.height);
     } catch (error) {
       console.error(error.message);
     }
