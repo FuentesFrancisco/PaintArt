@@ -3,7 +3,7 @@
 <!-- about -->
 <p align="center">
   <a href="https://paint-art.herokuapp.com/">
-    <img src="https://paint-art.herokuapp.com/static/media/logo192.8dc61a89.png" style="margin: 0 auto;" />
+    <img src="https://paint-art.herokuapp.com/static/media/logo192.jpg" style="margin: 0 auto;" />
   </a>
 
   <h3 align="center">PaintArt | A public Art Gallery</h3>
